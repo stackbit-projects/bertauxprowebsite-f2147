@@ -58,7 +58,8 @@
         		{{ if $.Site.Data.config.header.anncmnt_is_home_only }}
         			{{ if eq $.URL "/" }}
         				{{ $include_dict := dict "Site" $.Site }}
-        				{{ partial "announcement.html" $include_dict }}
+                        {{ partial "announcement.html" $include_dict }}
+                        {{ partial "announcement.html" $include_dict }}
         			{{ end }}
         		{{ else }}
         			{{ $include_dict := dict "Site" $.Site }}
