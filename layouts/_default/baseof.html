@@ -59,7 +59,6 @@
         			{{ if eq $.URL "/" }}
         				{{ $include_dict := dict "Site" $.Site }}
                         {{ partial "announcement.html" $include_dict }}
-                        {{ partial "header.html" $include_dict }}
         			{{ end }}
         		{{ else }}
         			{{ $include_dict := dict "Site" $.Site }}
